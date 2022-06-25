@@ -9,6 +9,9 @@ A comprehensive analysis of differential gene expression matrix from The Cancer 
 * Broad GDAC firehose (https://gdac.broadinstitute.org/)
 * Link of the TCGA mRNA preprocessed file used for this tutorial (http://gdac.broadinstitute.org/runs/stddata__2016_01_28/data/HNSC/20160128/gdac.broadinstitute.org_HNSC.mRNAseq_Preprocess.Level_3.2016012800.0.0.tar.gz)
 
+# In the case of an "error" when running libraries; then, ensure the installation of corresponding library. (By typing the following command)
+e.g. biocManager::install("Name_of_the_uninstalled_library")
+
 # Preparing the datasets
 1. Before starting the analysis, always make a separate directory so that they may not replace the files of the previous analysis i.e. "C:/Users/User_name/Desktop/GitHub/HNSCC_DEGs/" on the Desktop.   
 2. In this turoial, you will be using the mRNAseq_preprocess archived file of Head and Neck squamous cell carcinoma obtained from the Broad GDAC firehose. Decompress the downloaded file and import the file names as "HNSC.mRNAseq_raw_counts.txt" in R.   
