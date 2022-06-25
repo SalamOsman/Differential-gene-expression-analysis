@@ -21,6 +21,7 @@ A comprehensive analysis of differential gene expression matrix from The Cancer 
 5. Also, get a background knowledge for reading the plots and look at interesting observations.  
 
 # If you need any help, ask me!
+abdussalam@precisionmedicine.pk
 salam.nurzai@gmail.com
 
 
