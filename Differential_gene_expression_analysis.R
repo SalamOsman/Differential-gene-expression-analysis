@@ -127,5 +127,5 @@ res <- lfcShrink(dds, coef="Sample_type_Normal_vs_HNSCC", type="apeglm")
 dim(res)
 plotMA(res, ylim = c(-5, 5))
 
-# Writing the list of DEGs. 
+# Writing the list of DEGs. Remember that the postive log2Foldchange value of genes represents upregulated while negative log2Foldchange value shows downregulated genes.
 write.csv(resSig, file = "path_to_your_directory/DGE_list.csv", quote = F)
