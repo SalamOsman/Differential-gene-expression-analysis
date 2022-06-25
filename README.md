@@ -3,10 +3,11 @@ A comprehensive analysis of differential gene expression matrix from The Cancer 
 
 # Prerequisite for the analysis.
 1. The installation of R software and packages for counting raw reads 
-2. Use the MS windows generic text editor "Notepad" and if you want to use more efficient text editor then install either a "TextPad" or "Notepad++".   
+2. (Optional) Use the MS windows generic text editor "Notepad" and if you want to use more efficient text editor then install either a "TextPad" or "Notepad++".   
 
 # Source for RNA-seq raw counts datasets and clinical files
 * Broad GDAC firehose (https://gdac.broadinstitute.org/)
+* Link of the TCGA mRNA preprocessed file used for this tutorial (http://gdac.broadinstitute.org/runs/stddata__2016_01_28/data/HNSC/20160128/gdac.broadinstitute.org_HNSC.mRNAseq_Preprocess.Level_3.2016012800.0.0.tar.gz)
 
 # Preparing the datasets
 1. Before starting the analysis, always make a separate directory so that they may not replace the files of the previous analysis i.e. "C:/Users/User_name/Desktop/GitHub/HNSCC_DEGs/" on the Desktop.   
