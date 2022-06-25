@@ -12,24 +12,13 @@ A comprehensive analysis of differential gene expression matrix from The Cancer 
 # Preparing the datasets
 1. Before starting the analysis, always make a separate directory so that they may not replace the files of the previous analysis i.e. "C:/Users/User_name/Desktop/GitHub/HNSCC_DEGs/" on the Desktop.   
 2. In this turoial, you will be using the mRNAseq_preprocess archived file of Head and Neck squamous cell carcinoma obtained from the Broad GDAC firehose. Decompress the downloaded file and import the file names as "HNSC.mRNAseq_raw_counts.txt" in R.   
-3. For assigning features to the raw counts, also retrieve the clinical archived file that is termed as "Clinical_Pick_Tier1". After decompressing the file, restructure the file named as "All_CDEs.txt" (Use the methodology described in ). 
-4. 
-5. 
-6. import "All_CDEs.txt"
-7. 
-8. 
-9. For assigning features to the raw counts, also retrieve the clinical archived file that is termed as "Clinical_Pick_Tier1". After decompressing the file, import "All_CDEs.txt" into MS Excel application and transpose the data frame of the sheet. Also remember that you should look and remove    
-10. Prepare a meta_data.txt from the clinical 
-
-3. Download mRNAseq_preprocess dataset. In this turoial, we will be using the mRNAseq_preprocess file of Head and Neck squamous cell carcinoma.   
-4. In addition, we will also need to download clinical dataset which includes information related to the age, sample type, gender, cancer stage etc of the sample IDs.
-5. Create a metafile from the clinical dataset    
-
+3. For assigning features to the raw counts, also retrieve the clinical archived file that is termed as "Clinical_Pick_Tier1". After decompressing the file, restructure the file named as "All_CDEs.txt" (Use the methodology described in "Creating-a-meta-file-from-TCGA-raw-clinical-file" session). For convenienece, the "meta_data.txt" has been added to the current repository. 
 # Running the script
 1. Change the directory path to your dataset location. 
 2. Customize the name of input and output file names as you like. 
 3. Run the script step by step.
-4. Let's see the score using statistical cutoff of each gene in the resulting list. 
+4. Let's see the score using statistical cutoff of each gene in the resulting list i.e. try adjusted p-value (padj) <0.05 and <0.02 and also absolute log2FoldChange >1 and >2.
+5. Also, get a background knowledge for reading the plots and look at interesting observations.  
 
 # If you need any help, ask me!
 salam.nurzai@gmail.com
