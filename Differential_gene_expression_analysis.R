@@ -9,53 +9,80 @@ library(apeglm)
 library(Glimma)
 library(ggfortify)
 library(genefilter)
+library(factoextra)
+library(viridis)
+library(EnhancedVolcano)
 
-#importing the count data
-countData <- read.table('Path_to_repository/HNSC.mRNAseq_raw_counts.txt', 
-                        header = TRUE, sep = "\t", row.names = 1, check.names = FALSE)
-head(countData)
+# Importing the count data
+countData <- read.table('C:/Users/khan_/Desktop/DGEA/HNSC.mRNAseq_raw_counts.txt', 
+                        header = TRUE, sep = "\t", check.names = FALSE)
+head(countData[1:10])
 
-#importing the metafile with clinical information
-metaData <- read.table('Path_to_repository/HNSCC_DEGs/meta_data.txt', 
-                       header = TRUE, sep = "\t", row.names = 1)
-metaData
+# Renaming and reshaping of the IDs column in countData.
+colnames(countData)[1] <- "ID"
+IDs <- data.frame(do.call("rbind", strsplit(as.character(countData$ID), "|", fixed = TRUE)))
+IDs$X2 <- NULL
+colnames(IDs)[1] <- "Gene_symbol"
 
-# Matching up the samples in count data with metafile
-all(rownames(metaData) %in% colnames(countData))
-all(rownames(metaData) == colnames(countData))
-countData <- countData[, rownames(metaData)]
-all(rownames(metaData) == colnames(countData))
-dim(countData)
-dim(metaData)
+# Building a countData dataframe with Gene_symbol as IDs by filtering. First, let's reshape the countData accordingly to the matching IDs.
+countData <- cbind(countData, IDs)
+countData <- countData[countData$Gene_symbol != "?", ]
+countData <- countData[!duplicated(countData$Gene_symbol), ]
+rownames(countData) <- countData$Gene_symbol
 
-# Grouping the count data based clinical information
-Status <- factor(metaData$Sample_type)
-Age <- factor(metaData$Alcohol_consumption)
-Gender <- factor(metaData$Gender)
-Clinical <- factor(metaData$Clinical_stage)
+# Discarding the unwanted column from the expression matrix.
+countData[ ,c('ID', 'Gene_symbol')] <- list(NULL)
+head(countData[1:10])
 
-# Create the design formula for the groups in current study
-design <- as.formula(~Status)
+# Importing the metafile with clinical information
+metaData <- read.table('C:/Users/khan_/Desktop/DGEA/meta_data.txt', 
+                       header = TRUE, sep = "\t")
+head(metaData)
 
-# Create the DESeqDataSet object
-dds <- DESeqDataSetFromMatrix(countData = countData, colData = metaData, design = design)
+# Resetting metaData file containing clinical information for the gene expression matrix (countData). 
+countData <- as.data.frame(t(countData))
+countData <- filter(countData , row.names(countData) %in% metaData$IDs)
+countData <- as.data.frame(t(countData))
 
-# Filtering (We will keep all genes where the total number of reads across all samples is greater than 5.)
-nrow(dds)
+# Checking the library sizes of the samples in the raw counts file.
+librarySizes <- colSums(countData)
+barplot(librarySizes, las=2, border = "NA", main="Library sizes of cancer vs normal samples")
+
+# Checking the distribution of the counts in samples. 
+logcounts <- log2(countData + 1)
+statusCol <- as.numeric(factor(metaData$Sample_type) + 1)
+boxplot(logcounts, xlab="", ylab="Log2(Counts)", las=2,col=statusCol, main = "raw Count distribution in cancer vs normal samples")
+abline(h=median(as.matrix(logcounts)), col="red")
+
+# PCA of the samples based on sample type.
+pcDat <- prcomp(t(countData), center = T)
+fviz_pca_ind(pcDat, geom.ind = "point", pointshape = 21, pointsize = 2, fill.ind = metaData$Sample_type, col.ind = "black", palette = "jco", addEllipses = TRUE, label = "var", col.var = "black", repel = TRUE, legend.title = "Sample types") + 
+  ggtitle("Cancer vs Normal samples based on types") + 
+  theme(plot.title = element_text(hjust = 0.5))
+
+# PCA of the samples based on cancer stages
+fviz_pca_ind(pcDat, geom.ind = "point", pointshape = 21, pointsize = 2, fill.ind = metaData$Stage, col.ind = "black", palette = "jco", addEllipses = TRUE, label = "var", col.var = "black", repel = TRUE, legend.title = "Sample types") + 
+  ggtitle("Cancer vs Normal samples based on cancer stages") + 
+  theme(plot.title = element_text(hjust = 0.5))
+
+# Verifying the sample names from meta data in raw counts file.
+all(metaData$IDs == colnames(countData))
+
+# Building study designs for downstream analysis.
+design <- as.formula(~ Sample_type)
+
+# Creating dds object for each study separately and normalization.
+dds <- DESeqDataSetFromMatrix(countData =  round(countData), colData = metaData, design = design)
+
+# Dropping/discarding low counts genes (< 5) from the studies.
 keep <- rowSums(counts(dds)) > 5
 dds <- dds[keep,]
 nrow(dds)
 
-# Normalization of the variance in count data across samples.
+# Calculating distance among the samples.
 vsd <- vst(dds, blind = FALSE)
 colData(vsd)
-dds <- estimateSizeFactors(dds)
-sizeFactors(dds)
-normalized_counts <- counts(dds, normalized=TRUE)
-
-# Calculating pairwise distance score across the samples
 sampleDists <- dist(t(assay(vsd)))
-sampleDists
 
 # Plotting a heatmap of the distance score
 sampleDistMatrix <- as.matrix(sampleDists)
@@ -63,61 +90,42 @@ rownames(sampleDistMatrix) <- paste( vsd$Status, vsd$Age, sep = " - " )
 colnames(sampleDistMatrix) <- NULL
 colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
 pheatmap(sampleDistMatrix,
-         clustering_distance_rows = sampleDists,
-         clustering_distance_cols = sampleDists,
-         col = colors)
+         clustering_distance_rows = sampleDists, show_rownames = F, show_colnames = F,
+         clustering_distance_cols = sampleDists, cluster_col = F, cluster_rows = F,
+         col = magma(10), main = "Cancer vs Control")
 
-rownames(sampleDistMatrix) <- paste( vsd$Status, sep = " - " )
-colnames(sampleDistMatrix) <- NULL
-colors <- colorRampPalette( rev(brewer.pal(9, "Blues")) )(255)
-pheatmap(sampleDistMatrix,
-         clustering_distance_rows = sampleDists,
-         clustering_distance_cols = sampleDists,
-         col = colors)
+# Post-normalization of the dds object.
+dds <- estimateSizeFactors(dds)
 
-# Performing differential gene expression analysis
+# Performing differential gene expression analysis using DESEQ function.
 dds <- DESeq(dds)
 res <- results(dds)
 res
 
-# Alternative to the above chunk
-res <- results(dds, contrast=c("Status","Infected","Negative"))
-mcols(res, use.names = TRUE)
-summary(res)
+# Making a contrast group and summarizing the results.
+res_group <- results(dds, contrast=c("Sample_type", "HNSCC", "Normal"))
+mcols(res_group, use.names = TRUE)
+summary(res_group)
 
-# Summarizing the results and sorting on the basis of expression values adn significance. 
-res.05 <- results(dds, alpha = 0.05)
-table(res.05$padj < 0.05)
-resLFC2 <- results(dds, lfcThreshold=1)
-table(resLFC2$padj < 0.1)
-sum(res$padj < 0.05, na.rm=TRUE)
-resSig <- subset(res, padj < 0.05)
-head(resSig[ order(resSig$log2FoldChange), ])
-head(resSig[ order(resSig$log2FoldChange, decreasing = TRUE), ])
+# Plotting volcano charts of the studies. 
+EnhancedVolcano(res_group, lab = rownames(res), x = 'log2FoldChange', y = 'padj', 
+                FCcutoff = 2, pCutoff = 0.05, legendPosition = "right", 
+                col=c('#C0C0C0', '#1E90FF', '#FFD700', '#FF6347'), 
+                legendLabels=c('Not sig.','log2FC','adj.P',
+                               'adj.P & log2FC'), border = 'full', borderWidth = 0.5, 
+                labCol = '#FF6347', selectLab = "NA", 
+                legendLabSize = 10, labSize = 0.00, xlim = c(-10,10), ylim = c(0, 15),
+                title = "Cancer vs Normal samples", subtitle = NULL)
+
+# Summarizing the results and sorting on the basis of expression values and significance (adjusted p value <0.05 and absolute log 2 fold change greater than 2). 
+resSig <- subset(res_group, padj < 0.05 & abs(log2FoldChange) > 2)
 dim(resSig)
 
-# Shrinking the log2FC values.
+# Shrinking the log2FC values and constructing MA plot.
 resultsNames(dds)
-res <- lfcShrink(dds, coef="Status_Negative_vs_Infected", type="apeglm")
+res <- lfcShrink(dds, coef="Sample_type_Normal_vs_HNSCC", type="apeglm")
 dim(res)
 plotMA(res, ylim = c(-5, 5))
 
-# Plotting the distogram of p-values
-hist(res$pvalue[res$baseMean > 1], breaks = 0:20/20,
-     col = "grey50", border = "white")
-
-qs <- c(0, quantile(resLFC1$baseMean[resLFC1$baseMean > 0], 0:6/6))
-bins <- cut(resLFC1$baseMean, qs)
-levels(bins) <- paste0("~", round(signif((qs[-1] + qs[-length(qs)])/2, 2)))
-fractionSig <- tapply(resLFC1$pvalue, bins, function(p)
-  mean(p < .05, na.rm = TRUE))
-barplot(fractionSig, xlab = "mean normalized count",
-        ylab = "fraction of small p values")
-
-# Sorting the list based on P-values
-resOrdered <- res[order(res$pvalue),]
-dim(resOrdered)
-head(resOrdered)
-
 # Writing the list of DEGs. 
-write.csv(resLFC2, file = "Path_to_repository/DGE_list.csv", quotes = F)
+write.csv(resSig, file = "C:/Users/khan_/Desktop/DGEA/DGE_list.csv", quote = F)
