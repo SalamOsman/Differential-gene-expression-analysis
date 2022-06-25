@@ -14,7 +14,7 @@ library(viridis)
 library(EnhancedVolcano)
 
 # Importing the count data
-countData <- read.table('C:/Users/khan_/Desktop/DGEA/HNSC.mRNAseq_raw_counts.txt', 
+countData <- read.table('path_to_your_directory/HNSC.mRNAseq_raw_counts.txt', 
                         header = TRUE, sep = "\t", check.names = FALSE)
 head(countData[1:10])
 
@@ -35,7 +35,7 @@ countData[ ,c('ID', 'Gene_symbol')] <- list(NULL)
 head(countData[1:10])
 
 # Importing the metafile with clinical information
-metaData <- read.table('C:/Users/khan_/Desktop/DGEA/meta_data.txt', 
+metaData <- read.table('path_to_your_directory/meta_data.txt', 
                        header = TRUE, sep = "\t")
 head(metaData)
 
@@ -128,4 +128,4 @@ dim(res)
 plotMA(res, ylim = c(-5, 5))
 
 # Writing the list of DEGs. 
-write.csv(resSig, file = "C:/Users/khan_/Desktop/DGEA/DGE_list.csv", quote = F)
+write.csv(resSig, file = "path_to_your_directory/DGE_list.csv", quote = F)
