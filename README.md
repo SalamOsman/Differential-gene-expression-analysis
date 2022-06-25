@@ -10,7 +10,7 @@ A comprehensive analysis of differential gene expression matrix from The Cancer 
 * Link of the TCGA mRNA preprocessed file used for this tutorial (http://gdac.broadinstitute.org/runs/stddata__2016_01_28/data/HNSC/20160128/gdac.broadinstitute.org_HNSC.mRNAseq_Preprocess.Level_3.2016012800.0.0.tar.gz)
 
 # In the case of an "error" when running libraries; then, ensure the installation of corresponding library. (By typing the following command)
-e.g. biocManager::install("Name_of_the_uninstalled_library")
+biocManager::install("Name_of_the_uninstalled_library")
 
 # Preparing the datasets
 1. Before starting the analysis, always make a separate directory so that they may not replace the files of the previous analysis i.e. "C:/Users/User_name/Desktop/GitHub/HNSCC_DEGs/" on the Desktop.   
