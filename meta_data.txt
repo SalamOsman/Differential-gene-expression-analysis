@@ -1,0 +1,290 @@
+IDs	Age	Anatomic_site	Gender	Stage	Sample_type
+TCGA-BA-4075-01	49	oral tongue	male	stage iii	HNSCC
+TCGA-BA-4077-01	45	base of tongue	female	stage iva	HNSCC
+TCGA-BA-5557-01	41	oral tongue	female	stage iii	HNSCC
+TCGA-BA-5559-01	71	tonsil	male	NA	HNSCC
+TCGA-BA-6871-01	75	base of tongue	male	NA	HNSCC
+TCGA-CN-4727-01	56	larynx	male	stage iva	HNSCC
+TCGA-CN-6021-01	63	larynx	female	NA	HNSCC
+TCGA-CN-6022-01	49	larynx	male	stage iva	HNSCC
+TCGA-CN-6023-01	73	larynx	male	stage iva	HNSCC
+TCGA-CN-6024-01	66	oral tongue	male	stage iva	HNSCC
+TCGA-CN-6992-01	61	larynx	male	stage iva	HNSCC
+TCGA-CN-6997-01	66	larynx	male	stage iva	HNSCC
+TCGA-CQ-5323-01	82	alveolar ridge	male	stage i	HNSCC
+TCGA-CQ-6221-01	79	oral tongue	male	NA	HNSCC
+TCGA-CQ-7068-01	80	floor of mouth	female	stage ii	HNSCC
+TCGA-CR-6472-01	59	base of tongue	male	NA	HNSCC
+TCGA-CR-6478-01	66	tonsil	female	NA	HNSCC
+TCGA-CX-7082-01	82	oral cavity	male	stage iva	HNSCC
+TCGA-CX-7219-01	47	floor of mouth	male	stage iva	HNSCC
+TCGA-DQ-5629-01	64	larynx	male	NA	HNSCC
+TCGA-DQ-7588-01	66	buccal mucosa	male	NA	HNSCC
+TCGA-BA-4074-01	69	oral tongue	male	stage iva	HNSCC
+TCGA-BA-4076-01	39	larynx	male	NA	HNSCC
+TCGA-BA-4078-01	83	larynx	male	NA	HNSCC
+TCGA-BA-5149-01	47	floor of mouth	male	stage iva	HNSCC
+TCGA-BA-5151-01	72	buccal mucosa	male	stage iva	HNSCC
+TCGA-BA-5152-01	56	alveolar ridge	male	stage iva	HNSCC
+TCGA-BA-5153-01	51	tonsil	male	NA	HNSCC
+TCGA-BA-5555-01	54	larynx	male	stage iva	HNSCC
+TCGA-BA-5556-01	58	floor of mouth	female	stage ii	HNSCC
+TCGA-BA-5558-01	65	hard palate	male	NA	HNSCC
+TCGA-BA-6868-01	53	larynx	male	NA	HNSCC
+TCGA-BA-6869-01	62	larynx	male	stage iii	HNSCC
+TCGA-BA-6870-01	60	larynx	female	NA	HNSCC
+TCGA-BA-6872-01	47	floor of mouth	male	NA	HNSCC
+TCGA-BA-6873-01	28	oral tongue	male	stage iva	HNSCC
+TCGA-BA-7269-01	61	oral tongue	male	stage iii	HNSCC
+TCGA-BB-4217-01	68	larynx	male	stage iva	HNSCC
+TCGA-BB-4223-01	48	tonsil	male	stage iva	HNSCC
+TCGA-BB-4224-01	52	oral tongue	male	stage iva	HNSCC
+TCGA-BB-4225-01	73	base of tongue	male	NA	HNSCC
+TCGA-BB-4228-01	50	base of tongue	male	stage iii	HNSCC
+TCGA-CN-4722-01	61	larynx	female	stage ii	HNSCC
+TCGA-CN-4723-01	67	larynx	male	stage iva	HNSCC
+TCGA-CN-4725-01	60	oral tongue	male	stage ii	HNSCC
+TCGA-CN-4726-01	68	buccal mucosa	male	stage iva	HNSCC
+TCGA-CN-4728-01	56	oral cavity	male	stage iva	HNSCC
+TCGA-CN-4729-01	73	oral cavity	male	stage iii	HNSCC
+TCGA-CN-4730-01	62	floor of mouth	male	stage iva	HNSCC
+TCGA-CN-4731-01	63	buccal mucosa	female	stage iva	HNSCC
+TCGA-CN-4733-01	61	oral tongue	male	stage iii	HNSCC
+TCGA-CN-4734-01	70	buccal mucosa	male	stage ii	HNSCC
+TCGA-CN-4735-01	52	larynx	male	stage iva	HNSCC
+TCGA-CN-4736-01	70	oral tongue	female	NA	HNSCC
+TCGA-CN-4737-01	19	oral tongue	male	stage iva	HNSCC
+TCGA-CN-4738-01	53	larynx	male	stage iva	HNSCC
+TCGA-CN-4739-01	71	larynx	male	stage iva	HNSCC
+TCGA-CN-4740-01	79	oral cavity	female	stage iva	HNSCC
+TCGA-CN-4741-01	75	alveolar ridge	male	stage iva	HNSCC
+TCGA-CN-4742-01	48	oral tongue	female	stage iva	HNSCC
+TCGA-CN-5355-01	64	larynx	male	stage iva	HNSCC
+TCGA-CN-5356-01	56	larynx	male	stage iii	HNSCC
+TCGA-CN-5358-01	60	floor of mouth	male	stage ii	HNSCC
+TCGA-CN-5359-01	59	floor of mouth	male	stage iva	HNSCC
+TCGA-CN-5360-01	68	larynx	male	stage iva	HNSCC
+TCGA-CN-5361-01	80	larynx	male	stage iva	HNSCC
+TCGA-CN-5363-01	48	larynx	male	stage ivb	HNSCC
+TCGA-CN-5364-01	55	floor of mouth	male	stage iva	HNSCC
+TCGA-CN-5370-01	78	oral tongue	male	stage iii	HNSCC
+TCGA-CN-5373-01	55	floor of mouth	female	stage i	HNSCC
+TCGA-CN-5374-01	56	tonsil	female	stage iva	HNSCC
+TCGA-CN-6010-01	53	larynx	male	stage iva	HNSCC
+TCGA-CN-6012-01	66	larynx	male	stage iva	HNSCC
+TCGA-CN-6013-01	56	alveolar ridge	male	stage iva	HNSCC
+TCGA-CN-6016-01	64	floor of mouth	male	stage iva	HNSCC
+TCGA-CN-6018-01	85	oral cavity	female	stage iva	HNSCC
+TCGA-CN-6019-01	61	oral tongue	male	stage iva	HNSCC
+TCGA-CN-6988-01	47	larynx	male	stage iva	HNSCC
+TCGA-CN-6989-01	64	larynx	male	stage iva	HNSCC
+TCGA-CN-6994-01	67	oral cavity	male	stage iva	HNSCC
+TCGA-CN-6995-01	78	floor of mouth	male	stage iva	HNSCC
+TCGA-CN-6998-01	53	oral tongue	male	stage iva	HNSCC
+TCGA-CQ-5324-01	59	floor of mouth	male	stage iii	HNSCC
+TCGA-CQ-5325-01	65	oral tongue	male	stage i	HNSCC
+TCGA-CQ-5326-01	67	alveolar ridge	male	stage iva	HNSCC
+TCGA-CQ-5329-01	46	oral tongue	female	stage ii	HNSCC
+TCGA-CQ-5330-01	69	oral tongue	female	stage iva	HNSCC
+TCGA-CQ-5331-01	73	hard palate	female	NA	HNSCC
+TCGA-CQ-5332-01	87	floor of mouth	male	stage iii	HNSCC
+TCGA-CQ-5334-01	87	buccal mucosa	male	stage iva	HNSCC
+TCGA-CQ-6220-01	69	buccal mucosa	male	stage iii	HNSCC
+TCGA-CQ-6222-01	63	oral tongue	male	stage iva	HNSCC
+TCGA-CQ-6223-01	69	alveolar ridge	male	stage ii	HNSCC
+TCGA-CQ-6224-01	52	oral tongue	male	stage iva	HNSCC
+TCGA-CQ-7065-01	40	oral tongue	male	stage ii	HNSCC
+TCGA-CR-5243-01	51	tonsil	male	NA	HNSCC
+TCGA-CR-5247-01	48	tonsil	male	NA	HNSCC
+TCGA-CR-5248-01	53	tonsil	male	NA	HNSCC
+TCGA-CR-5249-01	35	tonsil	female	stage ii	HNSCC
+TCGA-CR-5250-01	71	base of tongue	male	NA	HNSCC
+TCGA-CR-6467-01	59	tonsil	male	stage iii	HNSCC
+TCGA-CR-6470-01	38	tonsil	male	stage ii	HNSCC
+TCGA-CR-6471-01	58	oral cavity	male	stage iva	HNSCC
+TCGA-CR-6473-01	68	hypopharynx	male	NA	HNSCC
+TCGA-CR-6474-01	51	larynx	male	stage iva	HNSCC
+TCGA-CR-6477-01	56	base of tongue	female	NA	HNSCC
+TCGA-CR-6480-01	53	tonsil	male	NA	HNSCC
+TCGA-CR-6481-01	47	tonsil	male	NA	HNSCC
+TCGA-CR-6482-01	62	tonsil	male	NA	HNSCC
+TCGA-CR-6484-01	67	oral cavity	female	stage iva	HNSCC
+TCGA-CR-6487-01	50	tonsil	male	stage i	HNSCC
+TCGA-CR-6488-01	68	oral tongue	female	stage ii	HNSCC
+TCGA-CR-6491-01	60	floor of mouth	male	stage iva	HNSCC
+TCGA-CR-6492-01	78	hard palate	male	stage iii	HNSCC
+TCGA-CR-6493-01	69	oral tongue	male	stage iva	HNSCC
+TCGA-CR-7364-01	66	larynx	male	stage iii	HNSCC
+TCGA-CR-7365-01	60	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7367-01	52	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7368-01	54	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7369-01	59	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7370-01	72	larynx	female	NA	HNSCC
+TCGA-CR-7371-01	45	larynx	female	stage iii	HNSCC
+TCGA-CR-7372-01	45	oral tongue	male	stage i	HNSCC
+TCGA-CR-7373-01	66	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7374-01	67	larynx	female	NA	HNSCC
+TCGA-CR-7376-01	83	oral cavity	male	stage iii	HNSCC
+TCGA-CR-7377-01	58	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7379-01	78	oral cavity	female	stage iva	HNSCC
+TCGA-CR-7380-01	58	oral cavity	male	stage ivb	HNSCC
+TCGA-CR-7382-01	49	oral tongue	male	stage iva	HNSCC
+TCGA-CR-7383-01	79	tonsil	female	stage i	HNSCC
+TCGA-CR-7385-01	42	tonsil	male	NA	HNSCC
+TCGA-CR-7386-01	69	oral cavity	male	stage iva	HNSCC
+TCGA-CR-7388-01	70	larynx	female	NA	HNSCC
+TCGA-CR-7389-01	55	larynx	male	NA	HNSCC
+TCGA-CR-7390-01	67	oral tongue	male	stage iva	HNSCC
+TCGA-CR-7391-01	36	oral tongue	female	stage i	HNSCC
+TCGA-CR-7392-01	67	oral tongue	female	stage iva	HNSCC
+TCGA-CR-7393-01	26	oral tongue	male	stage iii	HNSCC
+TCGA-CR-7394-01	70	oral tongue	male	stage iva	HNSCC
+TCGA-CR-7395-01	80	oral cavity	female	stage ii	HNSCC
+TCGA-CR-7397-01	44	oral tongue	male	stage iva	HNSCC
+TCGA-CR-7398-01	53	larynx	female	stage ii	HNSCC
+TCGA-CR-7399-01	60	larynx	female	stage iva	HNSCC
+TCGA-CR-7402-01	68	larynx	male	NA	HNSCC
+TCGA-CR-7404-01	53	tonsil	male	NA	HNSCC
+TCGA-CV-5430-01	61	larynx	male	stage iva	HNSCC
+TCGA-CV-5431-01	73	larynx	male	stage iva	HNSCC
+TCGA-CV-5432-01	68	larynx	male	stage iii	HNSCC
+TCGA-CV-5434-01	60	larynx	male	stage iva	HNSCC
+TCGA-CV-5435-01	57	larynx	male	stage iva	HNSCC
+TCGA-CV-5436-01	65	floor of mouth	male	stage iva	HNSCC
+TCGA-CV-5439-01	62	base of tongue	male	stage iva	HNSCC
+TCGA-CV-5440-01	52	larynx	male	stage iva	HNSCC
+TCGA-CV-5441-01	58	larynx	male	stage iva	HNSCC
+TCGA-CV-5442-01	76	hard palate	female	stage iva	HNSCC
+TCGA-CV-5443-01	63	larynx	male	stage iii	HNSCC
+TCGA-CV-5444-01	64	larynx	male	stage iva	HNSCC
+TCGA-CV-5966-01	63	oral cavity	female	stage iva	HNSCC
+TCGA-CV-5970-01	59	oral tongue	male	stage iva	HNSCC
+TCGA-CV-5971-01	60	oral tongue	male	stage iva	HNSCC
+TCGA-CV-5973-01	62	oral tongue	female	stage iii	HNSCC
+TCGA-CV-5976-01	50	oral tongue	male	stage iva	HNSCC
+TCGA-CV-5977-01	66	oral tongue	male	stage iva	HNSCC
+TCGA-CV-5978-01	53	larynx	female	stage ivb	HNSCC
+TCGA-CV-5979-01	26	oral tongue	male	stage iva	HNSCC
+TCGA-CV-6003-01	50	oral tongue	female	stage iii	HNSCC
+TCGA-CV-6433-01	57	oral tongue	male	stage ii	HNSCC
+TCGA-CV-6436-01	62	oral tongue	male	stage iva	HNSCC
+TCGA-CV-6441-01	60	oral tongue	male	stage iii	HNSCC
+TCGA-CV-6933-11	53	oral tongue	male	NA	Normal
+TCGA-CV-6933-01	53	oral tongue	male	stage iii	HNSCC
+TCGA-CV-6934-11	66	oral tongue	female	NA	Normal
+TCGA-CV-6934-01	66	oral tongue	female	stage iva	HNSCC
+TCGA-CV-6935-11	67	larynx	male	NA	Normal
+TCGA-CV-6935-01	67	larynx	male	stage iva	HNSCC
+TCGA-CV-6936-11	68	floor of mouth	male	NA	Normal
+TCGA-CV-6936-01	68	floor of mouth	male	stage iva	HNSCC
+TCGA-CV-6937-01	71	oral cavity	male	stage ii	HNSCC
+TCGA-CV-6942-01	73	oral cavity	female	stage ii	HNSCC
+TCGA-CV-6943-01	74	base of tongue	male	stage iii	HNSCC
+TCGA-CV-6945-01	41	oral tongue	male	stage iva	HNSCC
+TCGA-CV-6948-01	79	floor of mouth	female	stage ivb	HNSCC
+TCGA-CV-6950-01	64	base of tongue	male	stage iva	HNSCC
+TCGA-CV-6956-11	67	oral tongue	male	NA	Normal
+TCGA-CV-6956-01	67	oral tongue	male	stage iii	HNSCC
+TCGA-CV-6959-01	48	oral tongue	male	stage iii	HNSCC
+TCGA-CV-6960-11	49	oral cavity	male	NA	Normal
+TCGA-CV-6960-01	49	oral cavity	male	stage iii	HNSCC
+TCGA-CV-6961-11	61	oral tongue	male	NA	Normal
+TCGA-CV-6961-01	61	oral tongue	male	stage ii	HNSCC
+TCGA-CV-6962-11	65	larynx	male	NA	Normal
+TCGA-CV-6962-01	65	larynx	male	stage iva	HNSCC
+TCGA-CV-7089-01	74	larynx	male	stage iva	HNSCC
+TCGA-CV-7090-01	39	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7091-11	54	oral cavity	male	NA	Normal
+TCGA-CV-7091-01	54	oral cavity	male	stage i	HNSCC
+TCGA-CV-7095-01	87	oral cavity	female	stage ii	HNSCC
+TCGA-CV-7097-11	53	oral cavity	male	NA	Normal
+TCGA-CV-7097-01	53	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7099-01	85	oral cavity	female	stage ii	HNSCC
+TCGA-CV-7100-01	66	oral cavity	male	stage iii	HNSCC
+TCGA-CV-7102-01	76	floor of mouth	female	stage iva	HNSCC
+TCGA-CV-7103-11	49	oral tongue	male	NA	Normal
+TCGA-CV-7103-01	49	oral tongue	male	stage iva	HNSCC
+TCGA-CV-7104-01	61	oral tongue	female	stage iva	HNSCC
+TCGA-CV-7177-11	82	larynx	female	NA	Normal
+TCGA-CV-7177-01	82	larynx	female	stage ii	HNSCC
+TCGA-CV-7178-11	64	oral cavity	female	NA	Normal
+TCGA-CV-7178-01	64	oral cavity	female	stage iva	HNSCC
+TCGA-CV-7180-01	34	oral tongue	male	stage ii	HNSCC
+TCGA-CV-7183-11	53	oral cavity	male	NA	Normal
+TCGA-CV-7183-01	53	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7235-11	67	floor of mouth	male	NA	Normal
+TCGA-CV-7235-01	67	floor of mouth	male	stage ii	HNSCC
+TCGA-CV-7236-01	77	oral tongue	female	stage iva	HNSCC
+TCGA-CV-7238-11	69	oral tongue	female	NA	Normal
+TCGA-CV-7238-01	69	oral tongue	female	stage ii	HNSCC
+TCGA-CV-7242-11	60	larynx	female	NA	Normal
+TCGA-CV-7242-01	60	larynx	female	stage ii	HNSCC
+TCGA-CV-7243-01	50	oral tongue	male	stage iii	HNSCC
+TCGA-CV-7245-11	62	larynx	male	NA	Normal
+TCGA-CV-7245-01	62	larynx	male	stage iva	HNSCC
+TCGA-CV-7247-01	55	larynx	male	stage iii	HNSCC
+TCGA-CV-7248-01	63	larynx	female	stage iva	HNSCC
+TCGA-CV-7250-11	64	larynx	male	NA	Normal
+TCGA-CV-7250-01	64	larynx	male	stage iva	HNSCC
+TCGA-CV-7252-11	62	oral cavity	female	NA	Normal
+TCGA-CV-7252-01	62	oral cavity	female	stage iva	HNSCC
+TCGA-CV-7253-01	58	oral cavity	male	stage iva	HNSCC
+TCGA-CV-7254-01	55	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7255-11	32	oral tongue	female	NA	Normal
+TCGA-CV-7255-01	32	oral tongue	female	stage iva	HNSCC
+TCGA-CV-7261-11	57	larynx	male	NA	Normal
+TCGA-CV-7261-01	57	larynx	male	stage iva	HNSCC
+TCGA-CV-7263-01	64	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7406-11	49	base of tongue	male	NA	Normal
+TCGA-CV-7406-01	49	base of tongue	male	stage ii	HNSCC
+TCGA-CV-7407-01	67	floor of mouth	female	stage ii	HNSCC
+TCGA-CV-7410-01	61	larynx	male	stage iii	HNSCC
+TCGA-CV-7413-01	74	oral cavity	female	stage ii	HNSCC
+TCGA-CV-7414-01	78	oral cavity	male	stage iva	HNSCC
+TCGA-CV-7415-01	60	larynx	male	stage iva	HNSCC
+TCGA-CV-7416-11	29	oral cavity	female	NA	Normal
+TCGA-CV-7416-01	29	oral cavity	female	stage iva	HNSCC
+TCGA-CV-7418-01	62	larynx	male	stage iva	HNSCC
+TCGA-CV-7421-01	76	larynx	male	stage iva	HNSCC
+TCGA-CV-7422-01	60	larynx	female	stage iva	HNSCC
+TCGA-CV-7423-11	65	oral cavity	male	NA	Normal
+TCGA-CV-7423-01	65	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7424-11	67	larynx	male	NA	Normal
+TCGA-CV-7424-01	67	larynx	male	stage iva	HNSCC
+TCGA-CV-7427-01	73	oral cavity	female	stage ii	HNSCC
+TCGA-CV-7428-01	47	oral cavity	male	stage iva	HNSCC
+TCGA-CV-7429-01	55	oral cavity	male	stage iva	HNSCC
+TCGA-CV-7430-01	56	larynx	male	stage iva	HNSCC
+TCGA-CV-7432-11	79	oral cavity	male	NA	Normal
+TCGA-CV-7432-01	79	oral cavity	male	stage ii	HNSCC
+TCGA-CV-7433-01	49	larynx	male	stage iva	HNSCC
+TCGA-CV-7434-11	64	oral cavity	male	NA	Normal
+TCGA-CV-7434-01	64	oral cavity	male	stage iva	HNSCC
+TCGA-CV-7435-01	57	oral cavity	female	stage iva	HNSCC
+TCGA-CV-7437-11	77	larynx	male	NA	Normal
+TCGA-CV-7437-01	77	larynx	male	stage ii	HNSCC
+TCGA-CV-7438-11	87	oral tongue	female	NA	Normal
+TCGA-CV-7438-01	87	oral tongue	female	stage i	HNSCC
+TCGA-CV-7440-01	38	larynx	male	stage ii	HNSCC
+TCGA-CX-7085-01	77	oral tongue	female	stage i	HNSCC
+TCGA-CX-7086-01	53	floor of mouth	male	stage iii	HNSCC
+TCGA-D6-6515-01	82	oral tongue	female	stage ii	HNSCC
+TCGA-D6-6516-01	69	lip	male	stage i	HNSCC
+TCGA-D6-6517-01	59	larynx	male	stage iii	HNSCC
+TCGA-D6-6823-01	50	oral tongue	male	stage ii	HNSCC
+TCGA-DQ-5624-01	43	oral tongue	female	NA	HNSCC
+TCGA-DQ-5625-01	52	oral tongue	female	NA	HNSCC
+TCGA-DQ-5630-01	73	oral tongue	male	NA	HNSCC
+TCGA-DQ-5631-01	52	oral tongue	male	NA	HNSCC
+TCGA-DQ-7591-01	62	base of tongue	male	NA	HNSCC
+TCGA-DQ-7592-01	57	oral tongue	male	NA	HNSCC
+TCGA-F7-7848-01	47	larynx	male	stage iva	HNSCC
+TCGA-H7-7774-01	75	oral cavity	female	stage iva	HNSCC
+TCGA-HD-7229-01	60	larynx	male	stage iva	HNSCC
+TCGA-HD-7753-01	62	oropharynx	male	stage i	HNSCC
+TCGA-HD-7754-01	69	tonsil	male	stage iva	HNSCC
+TCGA-HD-7831-01	74	oral tongue	male	stage iva	HNSCC
+TCGA-HD-7832-01	52	floor of mouth	male	stage iva	HNSCC
+TCGA-IQ-7630-01	49	oropharynx	male	stage ii	HNSCC
+TCGA-IQ-7631-01	60	buccal mucosa	female	stage ii	HNSCC
+TCGA-IQ-7632-01	68	alveolar ridge	female	stage iva	HNSCC
