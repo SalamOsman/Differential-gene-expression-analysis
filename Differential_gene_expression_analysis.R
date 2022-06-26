@@ -65,9 +65,6 @@ fviz_pca_ind(pcDat, geom.ind = "point", pointshape = 21, pointsize = 2, fill.ind
   ggtitle("Cancer vs Normal samples based on cancer stages") + 
   theme(plot.title = element_text(hjust = 0.5))
 
-# Verifying the sample names from meta data in raw counts file.
-all(metaData$IDs == colnames(countData))
-
 # Building study designs for downstream analysis.
 design <- as.formula(~ Sample_type)
 
